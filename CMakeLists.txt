@@ -12,5 +12,6 @@ set(SOURCES
 add_executable(scop ${SOURCES})
 
 find_package(glfw3 3.3 REQUIRED)
+find_package(Vulkan REQUIRED)
 
-target_link_libraries(scop glfw)
+target_link_libraries(scop glfw Vulkan::Vulkan)
